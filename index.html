@@ -12,16 +12,17 @@
   </head>
   <body class="manrope-font mb-[150px]">
     <!-- ! Navbar -->
-    <header class="max-w-[1250px] mx-auto shadow-md bg-slate-100/80 sticky top-0 backdrop-blur border-b">
-      <nav class="flex items-center justify-between py-4 px-6">
+    <!-- ! Navbar -->
+    <header class="sticky top-0 z-30 bg-slate-100/80 backdrop-blur border-b">
+      <nav class="max-w-[1250px] mx-auto grid grid-cols-3 items-center h-16 px-6">
         <!-- Left: Logo -->
         <a href="#" class="flex items-center gap-2">
-          <img src="/images/tea_logo.png" alt="Tea House Logo" class="w-12 h-12" />
-          <span class="text-2xl font-extrabold">Tea House</span>
+          <img src="/images/tea_logo.png" alt="Tea House Logo" class="h-10 w-10 object-contain" />
+          <span class="text-2xl font-extrabold leading-none">Tea House</span>
         </a>
 
-        <!-- Middle: Nav Links -->
-        <ul class="hidden md:flex items-center gap-8 text-lg font-medium text-[#555]">
+        <!-- Middle: Nav Links (centered perfectly) -->
+        <ul class="hidden md:flex justify-center items-center gap-8 text-lg font-medium text-[#555]">
           <li><a href="#" class="hover:text-[#ff0000] transition">Home</a></li>
           <li><a href="#features" class="hover:text-[#ff0000] transition">Features</a></li>
           <li><a href="#about" class="hover:text-[#ff0000] transition">About</a></li>
@@ -29,18 +30,18 @@
           <li><a href="#news" class="hover:text-[#ff0000] transition">News</a></li>
         </ul>
 
-        <!-- Right: Button -->
-        <div class="hidden md:flex items-center">
+        <!-- Right: CTA (right-aligned) -->
+        <div class="hidden md:flex justify-end items-center">
           <a
             href="#contact"
-            class="px-6 py-2 bg-gradient-to-r from-[#ff8938] to-[#ff0000] text-white rounded-lg shadow-md"
+            class="px-6 py-2 bg-gradient-to-r from-[#ff8938] to-[#ff0000] text-white rounded-lg shadow-md leading-none"
           >
             Contact Us
           </a>
         </div>
 
-        <!-- Mobile Menu Button -->
-        <button class="md:hidden text-2xl cursor-pointer" id="menu-btn" aria-label="Open menu">
+        <!-- Mobile Menu Button (right cell on small screens) -->
+        <button class="md:hidden justify-self-end text-2xl" id="menu-btn" aria-label="Open menu">
           <i class="fa-solid fa-bars"></i>
         </button>
       </nav>
@@ -255,6 +256,58 @@
         </div>
       </div>
     </section>
+
+    <!-- ! Footer -->
+    <footer class="bg-[#fff2eb] text-black mt-20">
+      <div class="max-w-[1250px] mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+        <!-- Layer 1: About -->
+        <div>
+          <h2 class="text-2xl font-extrabold mb-4">Tea House</h2>
+          <p class="text-slate-700 text-sm leading-relaxed">
+            Bringing you the finest tea blends and botanical infusions to brighten your day. Discover a new
+            way to enjoy tea with us.
+          </p>
+        </div>
+
+        <!-- Layer 2: Quick Links -->
+        <div>
+          <h2 class="text-xl font-bold mb-4">Quick Links</h2>
+          <ul class="space-y-2 text-slate-700">
+            <li><a href="#" class="hover:text-[#ff8938] transition">Home</a></li>
+            <li><a href="#features" class="hover:text-[#ff8938] transition">Features</a></li>
+            <li><a href="#about" class="hover:text-[#ff8938] transition">About</a></li>
+            <li><a href="#clients" class="hover:text-[#ff8938] transition">Clients</a></li>
+            <li><a href="#news" class="hover:text-[#ff8938] transition">News</a></li>
+          </ul>
+        </div>
+
+        <!-- Layer 3: Contact & Social -->
+        <div>
+          <h2 class="text-xl font-bold mb-4">Get in Touch</h2>
+          <p class="text-slate-700 text-sm mb-4">Email: contact@teahouse.com</p>
+          <p class="text-slate-700 text-sm mb-6">Phone: +49 123 456 789</p>
+          <div class="flex space-x-4 text-lg">
+            <a href="https://facebook.com" aria-label="Facebook" class="hover:text-[#ff8938] transition">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram" class="hover:text-[#ff8938] transition">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" aria-label="Twitter" class="hover:text-[#ff8938] transition">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" aria-label="LinkedIn" class="hover:text-[#ff8938] transition">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t text-slate-700 py-4 text-center text-sm">
+        © 2025 Tea House. All rights reserved.
+      </div>
+    </footer>
 
     <!-- Optional contact anchor target -->
     <div id="contact" class="h-2"></div>
